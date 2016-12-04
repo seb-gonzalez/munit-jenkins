@@ -39,11 +39,11 @@
     <property key="file.encoding" value="Cp1252"/>
     <property key="java.specification.version" value="1.8"/>
     <property key="log4j.configurationFile" value="file:/C:/a/git/munit-jenkins/target/test-classes/log4j2-test.xml"/>
-    <property key="cobertura.port" value="51810"/>
+    <property key="cobertura.port" value="50347"/>
     <property key="java.class.path" value="C:/a/apache-maven-3.3.9/boot/plexus-classworlds-2.5.2.jar"/>
     <property key="user.name" value="Sebastian"/>
     <property key="java.vm.specification.version" value="1.8"/>
-    <property key="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean package"/>
+    <property key="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
     <property key="java.home" value="C:\Program Files\Java\jdk1.8.0_101\jre"/>
     <property key="sun.arch.data.model" value="64"/>
     <property key="user.language" value="es"/>
