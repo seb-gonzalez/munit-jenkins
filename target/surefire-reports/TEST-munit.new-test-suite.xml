@@ -1,4 +1,4 @@
-<testsuite name="new-test-suite" time="0.195" failures="0" errors="0" skipped="0" tests="1">
+<testsuite name="new-test-suite" time="0.206" failures="0" errors="0" skipped="0" tests="1">
   <properties>
     <property key="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property key="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_101\jre\bin"/>
@@ -39,11 +39,11 @@
     <property key="file.encoding" value="Cp1252"/>
     <property key="java.specification.version" value="1.8"/>
     <property key="log4j.configurationFile" value="file:/C:/a/git/munit-jenkins/target/test-classes/log4j2-test.xml"/>
-    <property key="cobertura.port" value="50347"/>
+    <property key="cobertura.port" value="54811"/>
     <property key="java.class.path" value="C:/a/apache-maven-3.3.9/boot/plexus-classworlds-2.5.2.jar"/>
     <property key="user.name" value="Sebastian"/>
     <property key="java.vm.specification.version" value="1.8"/>
-    <property key="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property key="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean package"/>
     <property key="java.home" value="C:\Program Files\Java\jdk1.8.0_101\jre"/>
     <property key="sun.arch.data.model" value="64"/>
     <property key="user.language" value="es"/>
@@ -63,5 +63,5 @@
     <property key="sun.desktop" value="windows"/>
     <property key="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase time="0.195" name="new-test-suite-decision1SubFlowTest" classname="new-test-suite"/>
+  <testcase time="0.206" name="new-test-suite-decision1SubFlowTest" classname="new-test-suite"/>
 </testsuite>

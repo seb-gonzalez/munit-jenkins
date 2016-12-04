@@ -15,7 +15,7 @@
 		<mule.munit.support.version>3.7.3</mule.munit.support.version>
 	</properties>
 	<build>
-		<pluginManagement>
+		
 			<plugins>
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
@@ -99,7 +99,7 @@
 					</configuration>
 				</plugin>
 			</plugins>
-		</pluginManagement>
+		
 		<testResources>
 			<testResource>
 				<directory>src/test/munit</directory>
@@ -108,6 +108,7 @@
 				<directory>src/test/resources</directory>
 			</testResource>
 		</testResources>
+
 	</build>
 	<reporting>
 		<plugins>
