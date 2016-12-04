@@ -13,7 +13,7 @@ http://www.mulesoft.org/schema/mule/mock http://www.mulesoft.org/schema/mule/moc
         <flow-ref name="decision1SubFlow" doc:name="Flow-ref to decision1SubFlow"/>
         <mock:verify-call messageProcessor=".*:.*" doc:name="Verify Call">
             <mock:with-attributes>
-                <mock:with-attribute name="name" whereValue="#[matchContains('decision1SubFlow')]"/>
+                <mock:with-attribute name="name" whereValue="#[matchContains('ddecision1SubFlow')]"/>
             </mock:with-attributes>
         </mock:verify-call>
     </munit:test>
