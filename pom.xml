@@ -15,17 +15,10 @@
 		<mule.munit.support.version>3.7.3</mule.munit.support.version>
 		
 		
-		<!--  This format is used by SonarQube. If you need another format see "buildnumber-maven-plugin" -->
-<maven.build.timestamp.format>MM.yyyy</maven.build.timestamp.format>
-<yearMonth>${maven.build.timestamp}</yearMonth>    
-<!-- ************************-->
-<!-- Sonar/Reporting settings -->
-<!-- ************************-->
-<!-- Sonar/Jacoco integration. Note that these properties need to be defined outside the "coverage" profile
-because we want to be to able to execute mvn sonar:sonar without passing a profile -->
-<!-- Tells Sonar to use jacoco for coverage results -->
-<sonar.projectKey>MyProjectKey</sonar.projectKey>
-<sonar.projectName>My Project</sonar.projectName>
+		<sonar.core.codeCoveragePlugin>jacoco</sonar.core.codeCoveragePlugin>
+    <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
+    <sonar.jacoco.reportPath>${project.basedir}/../target/jacoco.exec</sonar.jacoco.reportPath>
+
 
 		
 		
@@ -33,6 +26,26 @@ because we want to be to able to execute mvn sonar:sonar without passing a profi
 	<build>
 		
 			<plugins>
+				
+				<build>
+    <plugins>
+        <plugin>
+            <groupId>org.jacoco</groupId>
+            <artifactId>jacoco-maven-plugin</artifactId>
+            <version>0.7.0.201403182114</version>
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>prepare-agent</goal>
+                    </goals>
+                </execution>
+            </executions>
+            <configuration>
+                <destFile>${sonar.jacoco.reportPath}</destFile>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
 					<artifactId>findbugs-maven-plugin</artifactId>
