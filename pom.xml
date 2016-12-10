@@ -27,8 +27,8 @@
 		
 			<plugins>
 				
-				<build>
-    <plugins>
+				
+    
         <plugin>
             <groupId>org.jacoco</groupId>
             <artifactId>jacoco-maven-plugin</artifactId>
@@ -44,8 +44,8 @@
                 <destFile>${sonar.jacoco.reportPath}</destFile>
             </configuration>
         </plugin>
-    </plugins>
-</build>
+    
+
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
 					<artifactId>findbugs-maven-plugin</artifactId>
