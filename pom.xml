@@ -13,31 +13,35 @@
 		<mule.tools.version>1.2</mule.tools.version>
 		<munit.version>1.2.1</munit.version>
 		<mule.munit.support.version>3.7.3</mule.munit.support.version>
-		
 	</properties>
 	<build>
 		<plugins>
 
+			
 			<plugin>
 				<groupId>org.jacoco</groupId>
 				<artifactId>jacoco-maven-plugin</artifactId>
-				<version>0.5.7.201204190339</version>
+				<version>0.5.5.201112152213</version>
+				<configuration>
+					<destFile>${basedir}/target/coverage-reports/jacoco-unit.exec</destFile>
+					<dataFile>${basedir}/target/coverage-reports/jacoco-unit.exec</dataFile>
+				</configuration>
 				<executions>
 					<execution>
+						<id>jacoco-initialize</id>
 						<goals>
 							<goal>prepare-agent</goal>
 						</goals>
 					</execution>
 					<execution>
-						<id>report</id>
-						<phase>prepare-package</phase>
+						<id>jacoco-site</id>
+						<phase>package</phase>
 						<goals>
 							<goal>report</goal>
 						</goals>
 					</execution>
 				</executions>
 			</plugin>
-
 
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
